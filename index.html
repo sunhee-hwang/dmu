@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동양미래대학교</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        body {
+            font-family: 'Pretendard', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- 상단 툴바 -->
+    <div class="bg-slate-800 text-gray-300 text-xs py-2 px-4 border-b border-slate-700">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-white transition">대학본부</a>
+                <a href="#" class="hover:text-white transition">도서관</a>
+                <a href="#" class="hover:text-white transition">입학홈페이지</a>
+            </div>
+            <div class="flex space-x-4 items-center">
+                <a href="#" class="hover:text-white transition"><i class="fas font-sm fa-lock mr-1"></i>로그인</a>
+                <span class="text-slate-600">|</span>
+                <a href="#" class="hover:text-white transition">ENGLISH</a>
+                <a href="#" class="hover:text-white transition">中文</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 네비게이션 바 -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-blue-900 rounded-full flex items-center justify-center text-white font-bold text-xl">DMU</div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-xl text-blue-900 tracking-tight">동양미래대학교</span>
+                    <span class="text-xs text-gray-500 font-medium">DONGYANG MIRAE UNIVERSITY</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex space-x-8 font-semibold text-gray-700">
+                <a href="#" class="hover:text-blue-700 transition py-2 border-b-2 border-transparent hover:border-blue-700">대학소개</a>
+                <a href="#" class="hover:text-blue-700 transition py-2 border-b-2 border-transparent hover:border-blue-700">학과안내</a>
+                <a href="#" class="hover:text-blue-700 transition py-2 border-b-2 border-transparent hover:border-blue-700">입학정보</a>
+                <a href="#" class="hover:text-blue-700 transition py-2 border-b-2 border-transparent hover:border-blue-700">대학생활</a>
+                <a href="#" class="hover:text-blue-700 transition py-2 border-b-2 border-transparent hover:border-blue-700">취업·창업</a>
+                <a href="#" class="hover:text-blue-700 transition py-2 border-b-2 border-transparent hover:border-blue-700">산학협력</a>
+            </nav>
+
+            <button class="md:hidden text-2xl text-gray-700 focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- 히어로 비주얼 섹션 -->
+    <section class="relative bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 text-white py-24 px-4 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto relative z-10 text-center md:text-left flex flex-col md:flex-row items-center justify-between">
+            <div class="mb-8 md:mb-0 max-w-2xl">
+                <span class="inline-block bg-blue-600 text-xs font-semibold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">Project-Based Learning</span>
+                <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4">
+                    전문직업교육의 대표대학<br>
+                    <span class="text-blue-400">동양미래대학교</span>
+                </h1>
+                <p class="text-gray-300 text-base md:text-lg mb-8">
+                    꿈을 현실로 만드는 실무 중심 교육, 당당한 미래를 향한 첫걸음을 동양미래대학교와 함께하세요.
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                    <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-lg hover:shadow-xl">2027학년도 모집요강</a>
+                    <a href="#" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-6 py-3 rounded-lg font-medium transition backdrop-blur-sm">캠퍼스 투어</a>
+                </div>
+            </div>
+            
+            <!-- Quick Menu Card -->
+            <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 w-full md:w-80 shadow-2xl">
+                <h3 class="text-lg font-bold mb-4 border-b border-white/20 pb-2 flex items-center">
+                    <i class="fas fa-bolt text-yellow-400 mr-2"></i> 빠른 서비스
+                </h3>
+                <div class="grid grid-cols-2 gap-3 text-sm">
+                    <a href="#" class="bg-white/10 hover:bg-white/20 p-3 rounded-xl flex flex-col items-center justify-center text-center transition">
+                        <i class="fas fa-calendar-alt text-xl mb-2 text-blue-300"></i>
+                        <span>학사일정</span>
+                    </a>
+                    <a href="#" class="bg-white/10 hover:bg-white/20 p-3 rounded-xl flex flex-col items-center justify-center text-center transition">
+                        <i class="fas fa-book-open text-xl mb-2 text-blue-300"></i>
+                        <span>열람실 예약</span>
+                    </a>
+                    <a href="#" class="bg-white/10 hover:bg-white/20 p-3 rounded-xl flex flex-col items-center justify-center text-center transition">
+                        <i class="fas fa-bus text-xl mb-2 text-blue-300"></i>
+                        <span>통학버스</span>
+                    </a>
+                    <a href="#" class="bg-white/10 hover:bg-white/20 p-3 rounded-xl flex flex-col items-center justify-center text-center transition">
+                        <i class="fas fa-[#ffcc00] fa-utensils text-xl mb-2 text-blue-300"></i>
+                        <span>오늘의 식단</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 주요 공지 및 뉴스 -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- 공지사항 -->
+            <div class="lg:col-span-2 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <div class="flex justify-between items-center mb-6 pb-2 border-b border-gray-100">
+                    <h2 class="text-xl font-bold text-gray-900 flex items-center">
+                        <span class="w-2 h-6 bg-blue-700 rounded-full mr-3"></span>공지사항
+                    </h2>
+                    <a href="#" class="text-xs text-gray-500 hover:text-blue-700 font-medium">더보기 +</a>
+                </div>
+                <ul class="space-y-4">
+                    <li class="flex justify-between items-center border-b border-gray-50 pb-3 hover:bg-gray-50 p-2 rounded transition">
+                        <div class="flex items-center space-x-3 overflow-hidden">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded shrink-0">학사</span>
+                            <a href="#" class="text-gray-700 hover:text-blue-700 text-sm font-medium truncate">2026학년도 2학기 수강신청 및 정정 일정 안내</a>
+                        </div>
+                        <span class="text-xs text-gray-400 shrink-0 ml-4">2026.10.12</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-50 pb-3 hover:bg-gray-50 p-2 rounded transition">
+                        <div class="flex items-center space-x-3 overflow-hidden">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-0.5 rounded shrink-0">장학</span>
+                            <a href="#" class="text-gray-700 hover:text-blue-700 text-sm font-medium truncate">2026학년도 교내/외 장학금 신청 안내 (추가)</a>
+                        </div>
+                        <span class="text-xs text-gray-400 shrink-0 ml-4">2026.10.08</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-50 pb-3 hover:bg-gray-50 p-2 rounded transition">
+                        <div class="flex items-center space-x-3 overflow-hidden">
+                            <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded shrink-0">취업</span>
+                            <a href="#" class="text-gray-700 hover:text-blue-700 text-sm font-medium truncate">하반기 동문 선배 초청 취업 멘토링 프로그램 참가자 모집</a>
+                        </div>
+                        <span class="text-xs text-gray-400 shrink-0 ml-4">2026.10.01</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-50 pb-3 hover:bg-gray-50 p-2 rounded transition">
+                        <div class="flex items-center space-x-3 overflow-hidden">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded shrink-0">행사</span>
+                            <a href="#" class="text-gray-700 hover:text-blue-700 text-sm font-medium truncate">제45회 동양미래대학교 엑스포(DMU EXPO) 개최 안내</a>
+                        </div>
+                        <span class="text-xs text-gray-400 shrink-0 ml-4">2026.09.25</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- DMU HOT NEWS -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-6 pb-2 border-b border-gray-100">
+                        <h2 class="text-xl font-bold text-gray-900 flex items-center">
+                            <span class="w-2 h-6 bg-indigo-600 rounded-full mr-3"></span>DMU NEWS
+                        </h2>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="bg-gray-200 h-40 rounded-xl mb-4 overflow-hidden flex items-center justify-center text-gray-400">
+                            <i class="fas fa-image text-3xl"></i>
+                        </div>
+                        <span class="text-xs font-bold text-indigo-600 mb-1 block">산학협력</span>
+                        <h3 class="font-bold text-gray-800 text-base group-hover:text-blue-700 transition line-clamp-2">
+                            동양미래대, 지역 산업체 연계 산학협력 프로젝트 대성황 종료
+                        </h3>
+                        <p class="text-xs text-gray-500 mt-2 line-clamp-2">
+                            학생들의 실무 능력 향상과 지역 기업의 기술 과제 해결을 위한...
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 주요 서비스 바 -->
+    <section class="bg-gray-100 py-12 border-t border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <a href="#" class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition flex flex-col items-center">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center text-xl mb-3">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <span class="font-bold text-gray-800">입학 안내</span>
+                    <span class="text-xs text-gray-500 mt-1">수시/정시 모집요강</span>
+                </a>
+                <a href="#" class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition flex flex-col items-center">
+                    <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center text-xl mb-3">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <span class="font-bold text-gray-800">학과 종합안내</span>
+                    <span class="text-xs text-gray-500 mt-1">공학·인문사회·예체능</span>
+                </a>
+                <a href="#" class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition flex flex-col items-center">
+                    <div class="w-12 h-12 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center text-xl mb-3">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <span class="font-bold text-gray-800">취창업 지원</span>
+                    <span class="text-xs text-gray-500 mt-1">취업정보센터/창업보육</span>
+                </a>
+                <a href="#" class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition flex flex-col items-center">
+                    <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-full flex items-center justify-center text-xl mb-3">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <span class="font-bold text-gray-800">오시는 길</span>
+                    <span class="text-xs text-gray-500 mt-1">1호선 구일역 위치</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="bg-slate-900 text-gray-400 text-sm py-12">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="md:col-span-1">
+                <div class="flex items-center space-x-2 text-white font-bold text-lg mb-4">
+                    <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-xs">DMU</div>
+                    <span>동양미래대학교</span>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">
+                    서울특별시 구로구 경인로 445 (고척동, 동양미래대학교)
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-3">주요 링크</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#" class="hover:text-white transition">대학소개</a></li>
+                    <li><a href="#" class="hover:text-white transition">입학안내</a></li>
+                    <li><a href="#" class="hover:text-white transition">학사공지</a></li>
+                    <li><a href="#" class="hover:text-white transition">정보공개</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-3">정보보호 & 약관</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#" class="text-blue-400 font-semibold hover:underline">개인정보처리방침</a></li>
+                    <li><a href="#" class="hover:text-white transition">이메일무단수집거부</a></li>
+                    <li><a href="#" class="hover:text-white transition">저작권보호정책</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-3">연락처</h4>
+                <p class="text-xs text-gray-400 leading-relaxed">
+                    대표전화: 02-2610-1114<br>
+                    입학문의: 02-2610-1700
+                </p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 border-t border-slate-800 pt-6 text-xs text-center text-gray-600">
+            © DONGYANG MIRAE UNIVERSITY. ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+
+</body>
+</html>
